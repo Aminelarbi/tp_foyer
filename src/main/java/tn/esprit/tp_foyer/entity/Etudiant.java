@@ -1,5 +1,5 @@
 package tn.esprit.tp_foyer.entity;
-
+// first test 
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -14,7 +14,7 @@ import java.util.Set;
 public class Etudiant {
 
     @Id
-    @GeneratedValue(strategy =GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idEtudiant;
     private long cin;
 
@@ -26,8 +26,5 @@ public class Etudiant {
 
     @ManyToMany(cascade = CascadeType.ALL)
     private Set<Reservation> reservations;
-
-
-
 
 }
